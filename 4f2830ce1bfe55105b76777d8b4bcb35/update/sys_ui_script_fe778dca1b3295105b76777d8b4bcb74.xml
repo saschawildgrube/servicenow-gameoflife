@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_script">
+    <sys_ui_script action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <description>The react component that manages the game state of the Conway's Game Of Life.</description>
+        <global>false</global>
+        <ignore_in_now_experience>false</ignore_in_now_experience>
+        <name>x_snc_game_of_life.GameOfLifeController</name>
+        <script><![CDATA[class GameOfLifeController extends ReactorComponent
+{
+	constructor(props)
+	{
+		super(props);
+
+		var nGameWidth = 50; 
+		var nGameHeight = 30;
+		var nCellSize = 20; 
+		var nSpeed = 80;
+
+		var aGameState = [];
+		aGameState.push([0,0,1,0,0,0,0]);     		
+		aGameState.push([0,0,0,1,0,0,0]);
+		aGameState.push([0,1,1,1,0,0,0]);
+		aGameState.push([0,0,0,0,0,0,0]);
+		aGameState.push([0,0,0,0,0,0,0]);
+		aGameState.push([0,0,0,0,0,0,0]);     
+		aGameState.push([0,0,0,0,0,0,0]);  		
+		
+		
+		this.state =
+		{
+			width: nGameWidth,
+			height: nGameHeight,
+			cellsize: nCellSize,
+			speed: nSpeed,
+			generation: 0,
+			gamestate: aGameState
+		};
+		
+		
+	}
+	
+	componentDidMount()
+	{
+		this.timerID = setInterval(
+			() => this.onNextGeneration(),
+			80
+		);
+	}
+
+	componentWillUnmount()
+	{
+		clearInterval(this.timerID);
+	}
+
+	onNextGeneration()
+	{
+		var aNewGameState = GameOfLifePlay(
+			this.state.height,
+			this.state.width,
+			this.state.gamestate);
+		this.setState(
+			{
+				generation: this.state.generation+1,
+				gamestate: aNewGameState
+			});
+	}
+	
+	render()
+	{
+
+		return e(GameOfLifeBoard,
+			{
+				height: this.state.height,
+				width: this.state.width,
+				cellsize: this.state.cellsize,
+				gamestate: this.state.gamestate
+			});	
+	}	
+}]]></script>
+        <script_name>GameOfLifeController</script_name>
+        <sys_class_name>sys_ui_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-28 19:09:15</sys_created_on>
+        <sys_id>fe778dca1b3295105b76777d8b4bcb74</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>x_snc_game_of_life.GameOfLifeController</sys_name>
+        <sys_package display_value="GameOfLife WORK IN PROGRESS" source="x_snc_game_of_life">4f2830ce1bfe55105b76777d8b4bcb35</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="GameOfLife WORK IN PROGRESS">4f2830ce1bfe55105b76777d8b4bcb35</sys_scope>
+        <sys_update_name>sys_ui_script_fe778dca1b3295105b76777d8b4bcb74</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-10-28 23:10:14</sys_updated_on>
+        <ui_type>0</ui_type>
+        <use_scoped_format>false</use_scoped_format>
+    </sys_ui_script>
+</record_update>
