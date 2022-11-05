@@ -7,16 +7,13 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2022-10-28 18:30:53</sys_created_on>
         <sys_id>cd3fb8461b3295105b76777d8b4bcbce</sys_id>
-        <sys_mod_count>0</sys_mod_count>
         <sys_name>Render</sys_name>
         <sys_package display_value="GameOfLife WORK IN PROGRESS" source="x_snc_game_of_life">4f2830ce1bfe55105b76777d8b4bcb35</sys_package>
         <sys_policy/>
         <sys_scope display_value="GameOfLife WORK IN PROGRESS">4f2830ce1bfe55105b76777d8b4bcb35</sys_scope>
         <sys_update_name>sys_scope_privilege_cd3fb8461b3295105b76777d8b4bcbce</sys_update_name>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2022-10-28 18:30:53</sys_updated_on>
         <target_name>Render</target_name>
-        <target_scope display_value="Reactor">e5879c7fdb39d110dcbdd03cd3961946</target_scope>
+        <target_scope display_value="Reactor WORK IN PROGRESS">e5879c7fdb39d110dcbdd03cd3961946</target_scope>
         <target_type>sys_script_include</target_type>
     </sys_scope_privilege>
 </record_update>

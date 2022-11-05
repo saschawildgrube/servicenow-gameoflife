@@ -2,11 +2,11 @@
     <sys_app action="INSERT_OR_UPDATE">
         <active>true</active>
         <can_edit_in_studio>true</can_edit_in_studio>
-        <enforce_license>none</enforce_license>
+        <enforce_license>log</enforce_license>
         <guided_setup_guid/>
         <hide_on_ui>false</hide_on_ui>
         <installed_as_dependency>false</installed_as_dependency>
-        <js_level>helsinki_es5</js_level>
+        <js_level>es_latest</js_level>
         <licensable>true</licensable>
         <license/>
         <license_category>none</license_category>
@@ -29,9 +29,6 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2022-10-28 18:00:09</sys_created_on>
         <sys_id>4f2830ce1bfe55105b76777d8b4bcb35</sys_id>
-        <sys_mod_count>3</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2022-10-28 18:09:06</sys_updated_on>
         <template/>
         <trackable>true</trackable>
         <uninstall_blocked>false</uninstall_blocked>
@@ -44,4 +41,5 @@
         <x_snc_devtools_maintainer_email/>
         <x_snc_devtools_repo_url/>
     </sys_app>
+    <sys_translated_text action="delete_multiple" query="documentkey=4f2830ce1bfe55105b76777d8b4bcb35"/>
 </record_update>

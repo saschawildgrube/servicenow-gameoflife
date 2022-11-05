@@ -9,20 +9,16 @@
         <mugshots_cache_json/>
         <notes/>
         <order>2</order>
-        <snapshot/>
         <step_config display_value="DevTools - Check scoped app dependency">c3f56886db3da490ba15a353059619ff</step_config>
         <sys_class_name>sys_atf_step</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2022-10-29 19:44:34</sys_created_on>
         <sys_id>27999e1edbfed5106a03dad1f396193b</sys_id>
-        <sys_mod_count>1</sys_mod_count>
         <sys_name>DevTools - Check scoped app dependency</sys_name>
         <sys_package display_value="GameOfLife WORK IN PROGRESS" source="x_snc_game_of_life">4f2830ce1bfe55105b76777d8b4bcb35</sys_package>
         <sys_policy/>
         <sys_scope display_value="GameOfLife WORK IN PROGRESS">4f2830ce1bfe55105b76777d8b4bcb35</sys_scope>
         <sys_update_name>sys_atf_step_27999e1edbfed5106a03dad1f396193b</sys_update_name>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2022-10-29 19:46:10</sys_updated_on>
         <table/>
         <test display_value="Game Of Life - Installation">2ee870021b3295105b76777d8b4bcb10</test>
         <timeout/>

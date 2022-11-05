@@ -6,14 +6,11 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2022-10-28 18:03:24</sys_created_on>
         <sys_id>2ee870021b3295105b76777d8b4bcb21</sys_id>
-        <sys_mod_count>0</sys_mod_count>
         <sys_name>6ae870021b3295105b76777d8b4bcb1d</sys_name>
         <sys_package display_value="GameOfLife WORK IN PROGRESS" source="x_snc_game_of_life">4f2830ce1bfe55105b76777d8b4bcb35</sys_package>
         <sys_policy/>
         <sys_scope display_value="GameOfLife WORK IN PROGRESS">4f2830ce1bfe55105b76777d8b4bcb35</sys_scope>
         <sys_update_name>sys_atf_test_suite_test_2ee870021b3295105b76777d8b4bcb21</sys_update_name>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2022-10-28 18:03:24</sys_updated_on>
         <test display_value="Game Of Life - Implementation">6ae870021b3295105b76777d8b4bcb1d</test>
         <test_suite display_value="Game Of Life">eae870021b3295105b76777d8b4bcb0c</test_suite>
     </sys_atf_test_suite_test>
