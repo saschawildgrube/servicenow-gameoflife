@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="x_snc_reactor_component">
     <x_snc_reactor_component action="INSERT_OR_UPDATE">
         <content_css/>
-        <dependencies>ab05058a1b3295105b76777d8b4bcb5f,50263d8e1bb295105b76777d8b4bcbef</dependencies>
+        <dependencies>ab05058a1b3295105b76777d8b4bcb5f,50263d8e1bb295105b76777d8b4bcbef,9191395fdbd21510f359c191159619ef</dependencies>
         <description>The react component that manages the game state of the Conway's Game Of Life.</description>
         <jsx>false</jsx>
         <name>GameOfLifeController</name>
@@ -11,42 +11,40 @@
 	constructor(props)
 	{
 		super(props);
-		//this.state = { clicked: false };
-		//this.onClick = this.onClick.bind(this);
 
 		var nGameWidth = 50; 
 		var nGameHeight = 30;
 		var nCellSize = 20; 
 		var nSpeed = 80;
 		
+		var strPattern = GetStringValue(this.props.pattern);
+		if (strPattern == '')
+		{
+			strPattern = 'glider';
+		}
+
 		this.state =
 		{
+			error: '',
+			pattern: strPattern,
 			width: nGameWidth,
 			height: nGameHeight,
 			cellsize: nCellSize,
 			speed: nSpeed,
-			generation: 0
+			generation: 0,
+			gamestate: null
 		};
 		
-		
+		this.onNextGeneration = this.onNextGeneration.bind(this);
+		this.onServerRequestGetPattern = this.onServerRequestGetPattern.bind(this);
 	}
-	
-	/*
-	onClick()
-	{
-		this.setState( {clicked: true} );
-		if (typeof this.props.callbackOnClick == 'function')
-		{
-			this.props.callbackOnClick();
-		}
-	}
-	*/
-	
+
 	componentDidMount()
 	{
 		this.timerID = setInterval(
-			() => this.onNextGeneration(),
-			80
+			//() = > this.onNextGeneration(),
+			this.onNextGeneration,
+			this.state.speed
 		);
 	}
 
@@ -57,35 +55,62 @@
 
 	onNextGeneration()
 	{
+		if (this.state.gamestate == null)
+		{
+			return;
+		}
 		var aNewGameState = GameOfLifePlay(
 			this.state.height,
 			this.state.width,
 			this.state.gamestate);
 		this.setState(
 			{
-				generation: this.state.generation+1,
+				generation: this.state.generation + 1,
 				gamestate: aNewGameState
 			});
 	}
+
+	onServerRequestGetPattern(response)
+	{
+		if (IsArray(response))
+		{
+			this.setState(
+				{
+					gamestate: response
+				}
+			);
+		}
+		else
+		{
+			this.setState( { error: 'Could not load pattern!' } );
+		}
+	}
+	
 	
 	render()
 	{
-
-		var aGameState = [];
-		aGameState.push([0,0,1,0,0,0,0]);     		
-		aGameState.push([0,0,0,1,0,0,0]);
-		aGameState.push([0,1,1,1,0,0,0]);
-		aGameState.push([0,0,0,0,0,0,0]);
-		aGameState.push([0,0,0,0,0,0,0]);
-		aGameState.push([0,0,0,0,0,0,0]);     
-		aGameState.push([0,0,0,0,0,0,0]);  	
+		if (this.state.error != '')
+		{
+			return e('div',{},'ERROR: '+ this.state.error);
+		}
+		if (this.state.gamestate == null)
+		{
+			ServerRequest(
+				'x_snc_game_of_life.GameOfLifeClientAPI',
+				'GetPattern',
+				{
+					pattern: this.state.pattern
+				},
+				this.onServerRequestGetPattern);
+			return e(Waiting,{ text: 'Loading Pattern...'});
+		}
 
 		return e(GameOfLifeBoard,
 			{
-				height: nHeight,
-				width: nWidth,
-				cellsize: nCellSize,
-				gamestate: aGameState
+				height: this.state.height,
+				width: this.state.width,
+				cellsize: this.state.cellsize,
+				gamestate: this.state.gamestate
 			});	
 	}	
 }]]></script>

@@ -14,36 +14,34 @@
 		var nGameWidth = 50; 
 		var nGameHeight = 30;
 		var nCellSize = 20; 
-		var nSpeed = 80;
+		var nSpeed = 90;
+		
+		var strPattern = GetStringValue(this.props.startpattern);
+		/*if (strPattern == '')
+		{
+			strPattern = 'glider';
+		}*/
 
-		var aGameState = [];
-		aGameState.push([0,0,1,0,0,0,0]);     		
-		aGameState.push([0,0,0,1,0,0,0]);
-		aGameState.push([0,1,1,1,0,0,0]);
-		aGameState.push([0,0,0,0,0,0,0]);
-		aGameState.push([0,0,0,0,0,0,0]);
-		aGameState.push([0,0,0,0,0,0,0]);     
-		aGameState.push([0,0,0,0,0,0,0]);  		
-		
-		
 		this.state =
 		{
+			error: '',
 			width: nGameWidth,
 			height: nGameHeight,
 			cellsize: nCellSize,
 			speed: nSpeed,
 			generation: 0,
-			gamestate: aGameState
+			gamestate: null
 		};
 		
-		
+		this.onNextGeneration = this.onNextGeneration.bind(this);
+		this.onServerRequestGetPattern = this.onServerRequestGetPattern.bind(this);
 	}
-	
+
 	componentDidMount()
 	{
 		this.timerID = setInterval(
 			() => this.onNextGeneration(),
-			80
+			this.state.speed
 		);
 	}
 
@@ -54,19 +52,80 @@
 
 	onNextGeneration()
 	{
+		if (this.state.gamestate == null)
+		{
+			return;
+		}
 		var aNewGameState = GameOfLifePlay(
 			this.state.height,
 			this.state.width,
 			this.state.gamestate);
+		var nNewGeneration = this.state.generation + 1;
 		this.setState(
 			{
-				generation: this.state.generation+1,
+				generation: nNewGeneration,
 				gamestate: aNewGameState
 			});
+		
+		var nAddRandonPattern = GetIntegerValue(this.props.addrandompattern);
+		if (nAddRandonPattern > 0)
+		{
+			if (nNewGeneration % nAddRandonPattern == 0)
+			{
+				this.getPattern('random');
+			}
+		}
+		
+	}
+
+	onServerRequestGetPattern(response)
+	{
+		var aPattern = response;
+		
+		if (IsArray(aPattern) == false)
+		{	
+			this.setState( { error: 'Could not load pattern!' } );
+			return;
+		}
+	
+		var aGameState = this.state.gamestate;
+			
+		var aGameState = GameOfLifeAddPattern(
+			this.state.height,
+			this.state.width,
+			aGameState,
+			aPattern,
+			10,10);
+		
+		this.setState(
+			{
+				gamestate: aGameState
+			}
+		);
+	}
+
+	getPattern(strPattern)
+	{
+		ServerRequest(
+			'x_snc_game_of_life.GameOfLifeClientAPI',
+			'GetPattern',
+			{
+				pattern: strPattern
+			},
+			this.onServerRequestGetPattern);		
 	}
 	
 	render()
 	{
+		if (this.state.error != '')
+		{
+			return e('div',{},'ERROR: '+ this.state.error);
+		}
+		if (this.state.gamestate == null)
+		{
+			this.getPattern(this.props.startpattern);
+			return e(Waiting,{ text: 'Loading Pattern...'});
+		}
 
 		return e(GameOfLifeBoard,
 			{

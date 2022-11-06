@@ -114,6 +114,36 @@ function GameOfLifePlay(nHeight,nWidth,aGameState)
 	}
 	return aNewGameState;
 }
+
+function GameOfLifeAddPattern(nHeight,nWidth,aGameState,aPattern,nPosY,nPosX)
+{
+	var aNewGameState = aGameState;
+	if (IsArray(aPattern))
+	{
+		for (var nPatternRow = 0; nPatternRow < aPattern.length; nPatternRow++)
+		{
+			var aPatternRow = aPattern[nPatternRow];
+			if (IsArray(aPatternRow))
+			{
+				for (var nPatternCol = 0; nPatternCol < aPatternRow.length; nPatternCol++)
+				{
+					var nSetPosY = (nPosY+nPatternRow) % nHeight;
+					var nSetPosX = (nPosX+nPatternCol) % nWidth;
+
+					aNewGameState = SetValue(
+						aPatternRow[nPatternCol] || GetValue(aNewGameState,nSetPosY,nSetPosY),
+						aNewGameState,
+						nSetPosY,
+						nSetPosX);
+						
+				}
+			}
+		}
+	}
+	
+	//console.log(aNewGameState);
+	return aNewGameState;
+}
 ]]></script>
         <script_name>GameOfLife</script_name>
         <sys_class_name>sys_ui_script</sys_class_name>

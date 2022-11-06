@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="x_snc_game_of_life_pattern">
+    <x_snc_game_of_life_pattern action="INSERT_OR_UPDATE">
+        <id>mwss</id>
+        <json><![CDATA[[
+	[0,0,1],
+	[1,0,0,0,0,1],
+	[0,0,0,0,0,0,1],
+	[1,0,0,0,0,0,1],
+	[0,1,1,1,1,1,1]
+]]]></json>
+        <name>Middle-weight Spaceship</name>
+        <sys_class_name>x_snc_game_of_life_pattern</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-11-06 09:21:29</sys_created_on>
+        <sys_id>7467597497835910a6a07767f053af56</sys_id>
+        <sys_name>Middle-weight Spaceship</sys_name>
+        <sys_package display_value="GameOfLife WORK IN PROGRESS" source="x_snc_game_of_life">4f2830ce1bfe55105b76777d8b4bcb35</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="GameOfLife WORK IN PROGRESS">4f2830ce1bfe55105b76777d8b4bcb35</sys_scope>
+        <sys_update_name>x_snc_game_of_life_pattern_7467597497835910a6a07767f053af56</sys_update_name>
+        <type>spaceship</type>
+    </x_snc_game_of_life_pattern>
+</record_update>

@@ -14,7 +14,11 @@
 	
 	render()
 	{
-		return e(GameOfLifeController);
+		return e(GameOfLifeController,
+			{
+				startpattern: 'random',
+				addrandompattern: 30
+			});
 	}	
 }]]></script>
         <script_name>GameOfLifeApp</script_name>
