@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="x_snc_game_of_life_pattern">
+    <x_snc_game_of_life_pattern action="INSERT_OR_UPDATE">
+        <id>blinker</id>
+        <json><![CDATA[[
+	[0,1],
+	[0,1],
+	[0,1]
+]]]></json>
+        <name>Blinker</name>
+        <sys_class_name>x_snc_game_of_life_pattern</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-11-06 17:38:02</sys_created_on>
+        <sys_id>62494bb4970b5910a6a07767f053afbd</sys_id>
+        <sys_name>Blinker</sys_name>
+        <sys_package display_value="GameOfLife WORK IN PROGRESS" source="x_snc_game_of_life">4f2830ce1bfe55105b76777d8b4bcb35</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="GameOfLife WORK IN PROGRESS">4f2830ce1bfe55105b76777d8b4bcb35</sys_scope>
+        <sys_update_name>x_snc_game_of_life_pattern_62494bb4970b5910a6a07767f053afbd</sys_update_name>
+        <type>oscillator</type>
+    </x_snc_game_of_life_pattern>
+</record_update>

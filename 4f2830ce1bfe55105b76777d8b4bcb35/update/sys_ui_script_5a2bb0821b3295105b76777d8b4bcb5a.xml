@@ -16,7 +16,8 @@
 	{
 		return e(GameOfLifeController,
 			{
-				startpattern: 'acorn',
+				//startpattern: 'blse',
+				startpattern: 'gosperglider',
 				addrandompattern: 0
 			});
 	}	

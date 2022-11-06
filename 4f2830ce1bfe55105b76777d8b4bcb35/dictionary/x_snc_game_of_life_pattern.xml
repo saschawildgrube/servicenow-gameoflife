@@ -9,6 +9,8 @@
                 <element inactive_on_update="false" label="Oscillator" sequence="2" value="oscillator"/>
                 <element inactive_on_update="false" label="Spaceship" sequence="3" value="spaceship"/>
                 <element inactive_on_update="false" label="Methuselah" sequence="4" value="Methuselah"/>
+                <element inactive_on_update="false" label="Block-Laying Switch Engine" sequence="5" value="blocklayingswitchengine"/>
+                <element inactive_on_update="false" label="Gun" sequence="5" value="gun"/>
             </choice>
         </element>
     </element>

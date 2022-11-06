@@ -2,7 +2,7 @@
     <sys_atf_step action="INSERT_OR_UPDATE">
         <active>true</active>
         <copied_from/>
-        <description>Checks if the scoped app "DevTools" is installed in a compatible version to: 1.45.0
+        <description>Checks if the scoped app "DevTools" is installed in a compatible version to: 1.46.0
 </description>
         <display_name>DevTools - Check scoped app dependency</display_name>
         <inputs/>
@@ -33,10 +33,10 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2022-10-29 19:44:15</sys_created_on>
         <sys_id>29999e1edbfed5106a03dad1f3961914</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2022-10-29 19:44:15</sys_updated_on>
-        <value>1.45.0</value>
+        <sys_updated_on>2022-11-06 18:12:14</sys_updated_on>
+        <value>1.46.0</value>
         <variable display_value="Versions">fc5964cadb3da490ba15a353059619b3</variable>
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">

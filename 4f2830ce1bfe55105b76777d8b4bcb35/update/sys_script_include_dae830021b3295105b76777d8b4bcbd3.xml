@@ -12,7 +12,7 @@
 	return [
 		{
 			name: 'DevTools',
-			version: '1.45.0',
+			version: '1.46.0',
 			url: 'https://github.com/saschawildgrube/servicenow-devtools/',
 			website_url: 'https://www.wildgrube.com/servicenow-devtools'
 		},

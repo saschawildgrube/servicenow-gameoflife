@@ -11,8 +11,18 @@
 	{
 		super(props);
 
-		var nGameWidth = 50; 
-		var nGameHeight = 30;
+		var nHeight = GetIntegerValue(this.props.height);
+		var nWidth = GetIntegerValue(this.props.width); 
+		
+		if (nHeight == 0)
+		{
+			nHeight = 40;
+		}
+		if (nWidth == 0)
+		{
+			nWidth = 60;
+		}
+		
 		var nCellSize = 20; 
 		var nSpeed = 90;
 		
@@ -25,8 +35,8 @@
 		this.state =
 		{
 			error: '',
-			width: nGameWidth,
-			height: nGameHeight,
+			width: nWidth,
+			height: nHeight,
 			cellsize: nCellSize,
 			speed: nSpeed,
 			generation: 0,
@@ -127,13 +137,19 @@
 			return e(Waiting,{ text: 'Loading Pattern...'});
 		}
 
-		return e(GameOfLifeBoard,
-			{
-				height: this.state.height,
-				width: this.state.width,
-				cellsize: this.state.cellsize,
-				gamestate: this.state.gamestate
-			});	
+		return e('div',{},
+			[
+				e(GameOfLifeBoard,
+				{
+					height: this.state.height,
+					width: this.state.width,
+					cellsize: this.state.cellsize,
+					gamestate: this.state.gamestate
+				})
+				,
+				e('div',{},'Generation: '+this.state.generation)
+			]
+			);	
 	}	
 }]]></script>
         <script_name>GameOfLifeController</script_name>

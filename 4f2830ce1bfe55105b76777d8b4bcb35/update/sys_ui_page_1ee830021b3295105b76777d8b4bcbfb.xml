@@ -14,10 +14,10 @@
 		docapi.RenderHeader();
 	]</g2:no_escape>
 	
-	<p>Welcome to The Game Of Life - created and maintained by&#160;<a href="mailto:sascha.wildgrube@servicenow.com">Sascha Wildgrube</a>.</p>
+	<p>Welcome to The Game Of Life app - created and maintained by&#160;<a href="mailto:sascha.wildgrube@servicenow.com">Sascha Wildgrube</a>.</p>
 
 	<h2>Features</h2> 
-	<p>This app is the well-known Game Of Life - implemented using Reactor. Enjoy.</p>
+	<p>This app is an implementation of the well-known&#160;<a href="https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life" target="_blank">Conway's Game Of Life</a>&#160;- built using&#160;<a href="https://www.wildgrube.com/servicenow-reactor" target="_blank">Reactor</a>&#160;and&#160;<a href="http://www.wildgrube.com/servicenow-devtools" target="_blank">DevTools</a>. Enjoy!</p>
 
 	<h2>Disclaimer</h2>
 	<g2:no_escape>$[docapi.RenderDisclaimer()]</g2:no_escape>	
