@@ -16,8 +16,8 @@
 	{
 		return e(GameOfLifeController,
 			{
-				startpattern: 'random',
-				addrandompattern: 30
+				startpattern: 'acorn',
+				addrandompattern: 0
 			});
 	}	
 }]]></script>
