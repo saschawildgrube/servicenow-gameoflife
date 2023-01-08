@@ -14,7 +14,6 @@
 	var IsArray = x_snc_devtools.IsArray;
 	
 	strPattern = GetStringValue(strPattern); 
-	Debug('GetPattern: '+strPattern);
 	
 	if (strPattern == 'random')
 	{
@@ -25,11 +24,9 @@
 		{
 			aPatterns.push(GetStringValue(grPattern.id));
 		}
-		Debug('GetPattern: aPatterns: '+x_snc_devtools.RenderValue(aPatterns));
 
 		var nRandon = GlideSecureRandomUtil.getSecureRandomIntBound(aPatterns.length);
 		strPattern = aPatterns[nRandon];
-		Debug('GetPattern: random: '+strPattern);
 	}
 	
 	
@@ -39,13 +36,13 @@
 	if (grPattern.next())
 	{
 		var aPattern = ParseJson(grPattern.getValue('json').toString());
-		if (IsArray(aPattern[0]) == true)
+		if (IsArray(aPattern) == true)
 		{
 			return aPattern;
 		}
 	}
 
-	var grPattern = GlideRecord('x_snc_game_of_life_pattern');
+	var grPattern = new GlideRecord('x_snc_game_of_life_pattern');
 	grPattern.addQuery('name','=',strPattern);
 	grPattern.query();
 	if (grPattern.next())
@@ -73,7 +70,7 @@
 	}
 	*/
 	
-	throw "Pattern not found";
+	//throw "Pattern not found";
 
 	return false;
 }]]></script>
