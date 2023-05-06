@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_atf_step">
+    <sys_atf_step action="DELETE">
+        <active>true</active>
+        <copied_from/>
+        <description>Performs sanity checks on the app.
+</description>
+        <display_name>DevTools - Check scoped app sanity</display_name>
+        <inputs/>
+        <mugshots_cache_json/>
+        <notes/>
+        <order>1</order>
+        <step_config display_value="DevTools - Check scoped app sanity">786a921f1b6c2090a89720a8ec4bcbc9</step_config>
+        <sys_class_name>sys_atf_step</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-05-06 15:04:33</sys_created_on>
+        <sys_id>960ea2c397eee510a6a07767f053af7c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>DevTools - Check scoped app sanity</sys_name>
+        <sys_package display_value="GameOfLife WORK IN PROGRESS" source="x_snc_game_of_life">4f2830ce1bfe55105b76777d8b4bcb35</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="GameOfLife WORK IN PROGRESS">4f2830ce1bfe55105b76777d8b4bcb35</sys_scope>
+        <sys_update_name>sys_atf_step_960ea2c397eee510a6a07767f053af7c</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-05-06 15:04:33</sys_updated_on>
+        <table/>
+        <test display_value="GameOfLife - Implementation">db09224b97aee510a6a07767f053af41</test>
+        <timeout/>
+        <warning_message/>
+    </sys_atf_step>
+    <sys_variable_value action="DELETE" query="document_key=960ea2c397eee510a6a07767f053af7c"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="GameOfLife WORK IN PROGRESS">4f2830ce1bfe55105b76777d8b4bcb35</application>
+        <file_path/>
+        <instance_id>84975bb2db8d919c4d2bac44d4961989</instance_id>
+        <instance_name>wildgrubetokyo</instance_name>
+        <name>sys_atf_step_960ea2c397eee510a6a07767f053af7c</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_atf_step"><sys_atf_step action="INSERT_OR_UPDATE"><active>true</active><copied_from/><description>Performs sanity checks on the app.
+</description><display_name>DevTools - Check scoped app sanity</display_name><inputs/><mugshots_cache_json/><notes/><order>1</order><step_config display_value="DevTools - Check scoped app sanity">786a921f1b6c2090a89720a8ec4bcbc9</step_config><sys_class_name>sys_atf_step</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2023-05-06 15:04:33</sys_created_on><sys_id>960ea2c397eee510a6a07767f053af7c</sys_id><sys_mod_count>0</sys_mod_count><sys_name>DevTools - Check scoped app sanity</sys_name><sys_package display_value="GameOfLife WORK IN PROGRESS" source="x_snc_game_of_life">4f2830ce1bfe55105b76777d8b4bcb35</sys_package><sys_policy/><sys_scope display_value="GameOfLife WORK IN PROGRESS">4f2830ce1bfe55105b76777d8b4bcb35</sys_scope><sys_update_name>sys_atf_step_960ea2c397eee510a6a07767f053af7c</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2023-05-06 15:04:33</sys_updated_on><table/><test display_value="GameOfLife - Implementation">db09224b97aee510a6a07767f053af41</test><timeout/><warning_message/></sys_atf_step><sys_variable_value action="delete_multiple" query="document_key=960ea2c397eee510a6a07767f053af7c"/></record_update>]]></payload>
+        <payload_hash>-1187859152</payload_hash>
+        <record_name>DevTools - Check scoped app sanity</record_name>
+        <reverted_from/>
+        <source>f03b4d6c97071910a6a07767f053af43</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-05-06 15:04:33</sys_created_on>
+        <sys_id>470e26c397eee510a6a07767f053af0e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>187f197d8cf0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-05-06 15:04:33</sys_updated_on>
+        <type>Test Step</type>
+        <update_guid>8f0e26c3f0eee510c2096039e80a830d</update_guid>
+        <update_guid_history>8f0e26c3f0eee510c2096039e80a830d:-1187859152</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-05-06 17:16:40</sys_created_on>
+        <sys_db_object display_value="" name="sys_atf_step">sys_atf_step</sys_db_object>
+        <sys_id>2fe79a6abef04ae693eb50cf227c8d19</sys_id>
+        <sys_metadata>960ea2c397eee510a6a07767f053af7c</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>DevTools - Check scoped app sanity</sys_name>
+        <sys_package display_value="GameOfLife WORK IN PROGRESS" source="x_snc_game_of_life">4f2830ce1bfe55105b76777d8b4bcb35</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="GameOfLife WORK IN PROGRESS">4f2830ce1bfe55105b76777d8b4bcb35</sys_scope>
+        <sys_scope_delete display_value="">04bbfb4e59ac4b9288138af27e7a6824</sys_scope_delete>
+        <sys_update_name>sys_atf_step_960ea2c397eee510a6a07767f053af7c</sys_update_name>
+        <sys_update_version display_value="sys_atf_step_960ea2c397eee510a6a07767f053af7c">470e26c397eee510a6a07767f053af0e</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-05-06 17:16:40</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

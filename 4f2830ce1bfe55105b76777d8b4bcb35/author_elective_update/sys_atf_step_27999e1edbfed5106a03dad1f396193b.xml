@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_atf_step">
+    <sys_atf_step action="DELETE">
+        <active>true</active>
+        <copied_from/>
+        <description>Checks if the scoped app "Reactor" is installed in a compatible version to: 1.3.0
+</description>
+        <display_name>DevTools - Check scoped app dependency</display_name>
+        <inputs/>
+        <mugshots_cache_json/>
+        <notes/>
+        <order>2</order>
+        <snapshot/>
+        <step_config display_value="DevTools - Check scoped app dependency">c3f56886db3da490ba15a353059619ff</step_config>
+        <sys_class_name>sys_atf_step</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-29 19:44:34</sys_created_on>
+        <sys_id>27999e1edbfed5106a03dad1f396193b</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>DevTools - Check scoped app dependency</sys_name>
+        <sys_package display_value="GameOfLife WORK IN PROGRESS" source="x_snc_game_of_life">4f2830ce1bfe55105b76777d8b4bcb35</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="GameOfLife WORK IN PROGRESS">4f2830ce1bfe55105b76777d8b4bcb35</sys_scope>
+        <sys_update_name>sys_atf_step_27999e1edbfed5106a03dad1f396193b</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-10-29 19:46:10</sys_updated_on>
+        <table/>
+        <test display_value="Game Of Life - Installation">2ee870021b3295105b76777d8b4bcb10</test>
+        <timeout/>
+        <warning_message/>
+    </sys_atf_step>
+    <sys_variable_value action="DELETE" query="document_key=27999e1edbfed5106a03dad1f396193b"/>
+    <sys_variable_value action="DELETE">
+        <document>sys_atf_step</document>
+        <document_key>27999e1edbfed5106a03dad1f396193b</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-29 19:44:34</sys_created_on>
+        <sys_id>92a99e1edbfed5106a03dad1f396199d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-10-29 19:44:34</sys_updated_on>
+        <value>e5879c7fdb39d110dcbdd03cd3961946</value>
+        <variable display_value="Application">7cf8ac8adb3da490ba15a353059619f5</variable>
+    </sys_variable_value>
+    <sys_variable_value action="DELETE">
+        <document>sys_atf_step</document>
+        <document_key>27999e1edbfed5106a03dad1f396193b</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-29 19:44:34</sys_created_on>
+        <sys_id>dea99e1edbfed5106a03dad1f396199c</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-10-29 19:46:10</sys_updated_on>
+        <value>1.3.0</value>
+        <variable display_value="Versions">fc5964cadb3da490ba15a353059619b3</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="DELETE" query="table=var__m_atf_input_variable_c3f56886db3da490ba15a353059619ff^id=27999e1edbfed5106a03dad1f396193b"/>
+<sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="GameOfLife WORK IN PROGRESS">4f2830ce1bfe55105b76777d8b4bcb35</application>
+        <file_path/>
+        <instance_id>84975bb2db8d919c4d2bac44d4961989</instance_id>
+        <instance_name>wildgrubetokyo</instance_name>
+        <name>sys_atf_step_27999e1edbfed5106a03dad1f396193b</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_atf_step">
+    <sys_atf_step action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <copied_from/>
+        <description>Checks if the scoped app "Reactor" is installed in a compatible version to: 1.3.0
+</description>
+        <display_name>DevTools - Check scoped app dependency</display_name>
+        <inputs/>
+        <mugshots_cache_json/>
+        <notes/>
+        <order>2</order>
+        <snapshot/>
+        <step_config display_value="DevTools - Check scoped app dependency">c3f56886db3da490ba15a353059619ff</step_config>
+        <sys_class_name>sys_atf_step</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-29 19:44:34</sys_created_on>
+        <sys_id>27999e1edbfed5106a03dad1f396193b</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>DevTools - Check scoped app dependency</sys_name>
+        <sys_package display_value="GameOfLife WORK IN PROGRESS" source="x_snc_game_of_life">4f2830ce1bfe55105b76777d8b4bcb35</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="GameOfLife WORK IN PROGRESS">4f2830ce1bfe55105b76777d8b4bcb35</sys_scope>
+        <sys_update_name>sys_atf_step_27999e1edbfed5106a03dad1f396193b</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-10-29 19:46:10</sys_updated_on>
+        <table/>
+        <test display_value="Game Of Life - Installation">2ee870021b3295105b76777d8b4bcb10</test>
+        <timeout/>
+        <warning_message/>
+    </sys_atf_step>
+    <sys_variable_value action="delete_multiple" query="document_key=27999e1edbfed5106a03dad1f396193b"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_atf_step</document>
+        <document_key>27999e1edbfed5106a03dad1f396193b</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-29 19:44:34</sys_created_on>
+        <sys_id>92a99e1edbfed5106a03dad1f396199d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-10-29 19:44:34</sys_updated_on>
+        <value>e5879c7fdb39d110dcbdd03cd3961946</value>
+        <variable display_value="Application">7cf8ac8adb3da490ba15a353059619f5</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_atf_step</document>
+        <document_key>27999e1edbfed5106a03dad1f396193b</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-29 19:44:34</sys_created_on>
+        <sys_id>dea99e1edbfed5106a03dad1f396199c</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-10-29 19:46:10</sys_updated_on>
+        <value>1.3.0</value>
+        <variable display_value="Versions">fc5964cadb3da490ba15a353059619b3</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_atf_input_variable_c3f56886db3da490ba15a353059619ff^id=27999e1edbfed5106a03dad1f396193b"/>
+</record_update>]]></payload>
+        <payload_hash>1247002251</payload_hash>
+        <record_name>DevTools - Check scoped app dependency</record_name>
+        <reverted_from/>
+        <source>0341a8a497831910a6a07767f053af24</source>
+        <source_table>sys_upgrade_history</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-11-05 10:45:02</sys_created_on>
+        <sys_id>8b41a8a497831910a6a07767f053af4c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1844764d91b0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-11-05 10:45:02</sys_updated_on>
+        <type>Test Step</type>
+        <update_guid>c741a8a41d831910660565fd830e884c</update_guid>
+        <update_guid_history>c741a8a41d831910660565fd830e884c:0,d9f060a42283191040c1a674c0251435:2083712600,f9ff1424fa831910b8a2ddb73b515e01:1247002251</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-05-06 15:13:22</sys_created_on>
+        <sys_db_object display_value="" name="sys_atf_step">sys_atf_step</sys_db_object>
+        <sys_id>6f01af97bb134d4c9b866dcbf3532790</sys_id>
+        <sys_metadata>27999e1edbfed5106a03dad1f396193b</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>DevTools - Check scoped app dependency</sys_name>
+        <sys_package display_value="GameOfLife WORK IN PROGRESS" source="x_snc_game_of_life">4f2830ce1bfe55105b76777d8b4bcb35</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="GameOfLife WORK IN PROGRESS">4f2830ce1bfe55105b76777d8b4bcb35</sys_scope>
+        <sys_scope_delete display_value="">04bbfb4e59ac4b9288138af27e7a6824</sys_scope_delete>
+        <sys_update_name>sys_atf_step_27999e1edbfed5106a03dad1f396193b</sys_update_name>
+        <sys_update_version display_value="sys_atf_step_27999e1edbfed5106a03dad1f396193b">8b41a8a497831910a6a07767f053af4c</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-05-06 15:13:22</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

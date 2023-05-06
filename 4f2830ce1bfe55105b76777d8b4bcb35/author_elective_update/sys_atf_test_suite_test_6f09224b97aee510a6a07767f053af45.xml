@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_atf_test_suite_test">
+    <sys_atf_test_suite_test action="DELETE">
+        <abort_on_failure>false</abort_on_failure>
+        <order>2</order>
+        <sys_class_name>sys_atf_test_suite_test</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-05-06 14:42:43</sys_created_on>
+        <sys_id>6f09224b97aee510a6a07767f053af45</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>db09224b97aee510a6a07767f053af41</sys_name>
+        <sys_package display_value="GameOfLife WORK IN PROGRESS" source="x_snc_game_of_life">4f2830ce1bfe55105b76777d8b4bcb35</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="GameOfLife WORK IN PROGRESS">4f2830ce1bfe55105b76777d8b4bcb35</sys_scope>
+        <sys_update_name>sys_atf_test_suite_test_6f09224b97aee510a6a07767f053af45</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-05-06 14:42:43</sys_updated_on>
+        <test display_value="GameOfLife - Implementation">db09224b97aee510a6a07767f053af41</test>
+        <test_suite display_value="GameOfLife">1309224b97aee510a6a07767f053af1c</test_suite>
+    </sys_atf_test_suite_test>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="GameOfLife WORK IN PROGRESS">4f2830ce1bfe55105b76777d8b4bcb35</application>
+        <file_path/>
+        <instance_id>84975bb2db8d919c4d2bac44d4961989</instance_id>
+        <instance_name>wildgrubetokyo</instance_name>
+        <name>sys_atf_test_suite_test_6f09224b97aee510a6a07767f053af45</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_atf_test_suite_test"><sys_atf_test_suite_test action="INSERT_OR_UPDATE"><abort_on_failure>false</abort_on_failure><order>2</order><sys_class_name>sys_atf_test_suite_test</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2023-05-06 14:42:43</sys_created_on><sys_id>6f09224b97aee510a6a07767f053af45</sys_id><sys_mod_count>0</sys_mod_count><sys_name>db09224b97aee510a6a07767f053af41</sys_name><sys_package display_value="GameOfLife WORK IN PROGRESS" source="x_snc_game_of_life">4f2830ce1bfe55105b76777d8b4bcb35</sys_package><sys_policy/><sys_scope display_value="GameOfLife WORK IN PROGRESS">4f2830ce1bfe55105b76777d8b4bcb35</sys_scope><sys_update_name>sys_atf_test_suite_test_6f09224b97aee510a6a07767f053af45</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2023-05-06 14:42:43</sys_updated_on><test display_value="GameOfLife - Implementation">db09224b97aee510a6a07767f053af41</test><test_suite display_value="GameOfLife">1309224b97aee510a6a07767f053af1c</test_suite></sys_atf_test_suite_test></record_update>]]></payload>
+        <payload_hash>-695128609</payload_hash>
+        <record_name>db09224b97aee510a6a07767f053af41</record_name>
+        <reverted_from/>
+        <source>f03b4d6c97071910a6a07767f053af43</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-05-06 14:42:43</sys_created_on>
+        <sys_id>af09224b97aee510a6a07767f053af47</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>187f183de250000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-05-06 14:42:43</sys_updated_on>
+        <type>Test Suite Test</type>
+        <update_guid>2709224b4eaee5104c95d0f0d7b0e347</update_guid>
+        <update_guid_history>2709224b4eaee5104c95d0f0d7b0e347:-695128609</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-05-06 15:14:07</sys_created_on>
+        <sys_db_object display_value="" name="sys_atf_test_suite_test">sys_atf_test_suite_test</sys_db_object>
+        <sys_id>0a9beab9a02c4605829c3cb218139a71</sys_id>
+        <sys_metadata>6f09224b97aee510a6a07767f053af45</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>db09224b97aee510a6a07767f053af41</sys_name>
+        <sys_package display_value="GameOfLife WORK IN PROGRESS" source="x_snc_game_of_life">4f2830ce1bfe55105b76777d8b4bcb35</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="GameOfLife WORK IN PROGRESS">4f2830ce1bfe55105b76777d8b4bcb35</sys_scope>
+        <sys_scope_delete display_value="">04bbfb4e59ac4b9288138af27e7a6824</sys_scope_delete>
+        <sys_update_name>sys_atf_test_suite_test_6f09224b97aee510a6a07767f053af45</sys_update_name>
+        <sys_update_version display_value="sys_atf_test_suite_test_6f09224b97aee510a6a07767f053af45">af09224b97aee510a6a07767f053af47</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-05-06 15:14:07</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

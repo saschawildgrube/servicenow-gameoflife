@@ -5,18 +5,21 @@
         <description/>
         <enable_parameterized_testing>false</enable_parameterized_testing>
         <fail_on_server_error>false</fail_on_server_error>
-        <name>Game Of Life - Implementation</name>
+        <name>GameOfLife - HtmlRenderPagePlay</name>
         <parameters/>
         <remember/>
         <sys_class_name>sys_atf_test</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2022-10-28 18:03:24</sys_created_on>
-        <sys_id>6ae870021b3295105b76777d8b4bcb1d</sys_id>
-        <sys_name>Game Of Life - Implementation</sys_name>
+        <sys_created_on>2023-05-06 15:10:26</sys_created_on>
+        <sys_id>d96feac797eee510a6a07767f053af05</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>GameOfLife - HtmlRenderPagePlay</sys_name>
         <sys_package display_value="GameOfLife WORK IN PROGRESS" source="x_snc_game_of_life">4f2830ce1bfe55105b76777d8b4bcb35</sys_package>
         <sys_policy/>
         <sys_scope display_value="GameOfLife WORK IN PROGRESS">4f2830ce1bfe55105b76777d8b4bcb35</sys_scope>
-        <sys_update_name>sys_atf_test_6ae870021b3295105b76777d8b4bcb1d</sys_update_name>
+        <sys_update_name>sys_atf_test_d96feac797eee510a6a07767f053af05</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-05-06 15:10:31</sys_updated_on>
     </sys_atf_test>
-    <sys_variable_value action="delete_multiple" query="document_key=6ae870021b3295105b76777d8b4bcb1d"/>
+    <sys_variable_value action="delete_multiple" query="document_key=d96feac797eee510a6a07767f053af05"/>
 </record_update>
