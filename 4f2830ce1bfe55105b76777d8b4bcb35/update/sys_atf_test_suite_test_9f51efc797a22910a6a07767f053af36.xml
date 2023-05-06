@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_atf_test_suite_test">
+    <sys_atf_test_suite_test action="INSERT_OR_UPDATE">
+        <abort_on_failure>false</abort_on_failure>
+        <order>100</order>
+        <sys_class_name>sys_atf_test_suite_test</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-05-06 18:48:44</sys_created_on>
+        <sys_id>9f51efc797a22910a6a07767f053af36</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>5351efc797a22910a6a07767f053af33</sys_name>
+        <sys_package display_value="GameOfLife" source="x_snc_game_of_life">4f2830ce1bfe55105b76777d8b4bcb35</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="GameOfLife">4f2830ce1bfe55105b76777d8b4bcb35</sys_scope>
+        <sys_update_name>sys_atf_test_suite_test_9f51efc797a22910a6a07767f053af36</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-05-06 19:34:35</sys_updated_on>
+        <test display_value="GameOfLife - GetPattern">5351efc797a22910a6a07767f053af33</test>
+        <test_suite display_value="GameOfLife">eae870021b3295105b76777d8b4bcb0c</test_suite>
+    </sys_atf_test_suite_test>
+</record_update>
