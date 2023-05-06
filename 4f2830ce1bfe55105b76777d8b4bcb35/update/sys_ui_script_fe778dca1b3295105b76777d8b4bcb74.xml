@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_script">
+    <sys_ui_script action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <description>The react component that manages the game state of the Conway's Game Of Life.</description>
+        <global>false</global>
+        <ignore_in_now_experience>false</ignore_in_now_experience>
+        <name>x_snc_game_of_life.GameOfLifeController</name>
+        <script><![CDATA[class GameOfLifeController extends ReactorComponent
+{
+	constructor(props)
+	{
+		super(props);
+
+		var nHeight = GetIntegerValue(this.props.height);
+		var nWidth = GetIntegerValue(this.props.width); 
+		
+		if (nHeight == 0)
+		{
+			nHeight = 40;
+		}
+		if (nWidth == 0)
+		{
+			nWidth = 60;
+		}
+		
+		var nCellSize = 20; 
+		var nSpeed = 90;
+		
+		var strPattern = GetStringValue(this.props.startpattern);
+
+		this.state =
+		{
+			error: '',
+			width: nWidth,
+			height: nHeight,
+			cellsize: nCellSize,
+			speed: nSpeed,
+			generation: 0,
+			gamestate: null
+		};
+		
+		this.onNextGeneration = this.onNextGeneration.bind(this);
+		this.onServerRequestGetPattern = this.onServerRequestGetPattern.bind(this);
+	}
+
+	componentDidMount()
+	{
+		this.timerID = setInterval(
+			this.onNextGeneration,
+			this.state.speed
+		);
+	}
+
+	componentWillUnmount()
+	{
+		clearInterval(this.timerID);
+	}
+
+	onNextGeneration()
+	{
+		if (this.state.gamestate == null)
+		{
+			return;
+		}
+		var aNewGameState = GameOfLifePlay(
+			this.state.height,
+			this.state.width,
+			this.state.gamestate);
+		var nNewGeneration = this.state.generation + 1;
+		this.setState(
+			{
+				generation: nNewGeneration,
+				gamestate: aNewGameState
+			});
+		
+		var nAddRandonPattern = GetIntegerValue(this.props.addrandompattern);
+		if (nAddRandonPattern > 0)
+		{
+			if (nNewGeneration % nAddRandonPattern == 0)
+			{
+				this.getPattern('random');
+			}
+		}
+		
+	}
+
+	onServerRequestGetPattern(response)
+	{
+		var aPattern = response;
+		
+		if (IsArray(aPattern) == false)
+		{	
+			this.setState( { error: 'Could not load pattern!' } );
+			return;
+		}
+	
+		var aGameState = this.state.gamestate;
+			
+		var aGameState = GameOfLifeAddPattern(
+			this.state.height,
+			this.state.width,
+			aGameState,
+			aPattern,
+			10,10);
+		
+		this.setState(
+			{
+				gamestate: aGameState
+			}
+		);
+	}
+
+	getPattern(strPattern)
+	{
+		ServerRequest(
+			'x_snc_game_of_life.GameOfLifeClientAPI',
+			'GetPattern',
+			{
+				pattern: strPattern
+			},
+			this.onServerRequestGetPattern);		
+	}
+	
+	render()
+	{
+		if (this.state.error != '')
+		{
+			return e('div',{},'ERROR: '+ this.state.error);
+		}
+		if (this.state.gamestate == null)
+		{
+			this.getPattern(this.props.startpattern);
+			return e(Waiting,{ text: 'Loading Pattern...'});
+		}
+
+		return e('div',{},
+			[
+				e(GameOfLifeBoard,
+				{
+					height: this.state.height,
+					width: this.state.width,
+					cellsize: this.state.cellsize,
+					gamestate: this.state.gamestate
+				})
+				,
+				e('div',{},'Generation: '+this.state.generation)
+			]
+			);	
+	}	
+}]]></script>
+        <script_name>GameOfLifeController</script_name>
+        <sys_class_name>sys_ui_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-28 19:09:15</sys_created_on>
+        <sys_id>fe778dca1b3295105b76777d8b4bcb74</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>x_snc_game_of_life.GameOfLifeController</sys_name>
+        <sys_package display_value="GameOfLife" source="x_snc_game_of_life">4f2830ce1bfe55105b76777d8b4bcb35</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="GameOfLife">4f2830ce1bfe55105b76777d8b4bcb35</sys_scope>
+        <sys_update_name>sys_ui_script_fe778dca1b3295105b76777d8b4bcb74</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-05-06 18:44:48</sys_updated_on>
+        <ui_type>0</ui_type>
+        <use_scoped_format>false</use_scoped_format>
+    </sys_ui_script>
+</record_update>

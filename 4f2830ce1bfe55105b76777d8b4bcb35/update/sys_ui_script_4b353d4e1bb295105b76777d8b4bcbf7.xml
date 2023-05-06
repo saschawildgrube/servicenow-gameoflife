@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_script">
+    <sys_ui_script action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <description>The functions required to calculate the  next generation of a Conway's Game Of Life game state.</description>
+        <global>false</global>
+        <ignore_in_now_experience>false</ignore_in_now_experience>
+        <name>x_snc_game_of_life.GameOfLife</name>
+        <script><![CDATA[function GameOfLifeGetCellState(aGameState,nRow,nColumn)
+{
+	if (aGameState[nRow] != undefined)
+	{
+		aRow = aGameState[nRow];
+		if (aRow != undefined)
+		{
+			if (aRow[nColumn] != undefined)
+			{
+				bState = aRow[nColumn];
+				if (bState == 1)
+				{
+					return true;	
+				}	
+			}
+		}
+	}
+	return false;
+}
+
+function GameOfLifeCountNeighbors(nHeight,nWidth,aGameState,nRow,nColumn)
+{
+	function GetPos(nPos,nRange)
+	{
+		if (nPos == -1)
+		{
+			return nRange - 1;
+		}
+		return nPos % nRange;	
+	}
+
+	var nNeighbors = 0;
+	if (GameOfLifeGetCellState(aGameState,GetPos(nRow-1,nHeight),GetPos(nColumn-1,nWidth)))
+	{
+		nNeighbors++;
+	}
+	if (GameOfLifeGetCellState(aGameState,GetPos(nRow-1,nHeight),GetPos(nColumn,nWidth)))
+	{
+		nNeighbors++;
+	}
+	if (GameOfLifeGetCellState(aGameState,GetPos(nRow-1,nHeight),GetPos(nColumn+1,nWidth)))
+	{
+		nNeighbors++;
+	}
+	if (GameOfLifeGetCellState(aGameState,GetPos(nRow,nHeight),GetPos(nColumn-1,nWidth)))
+	{
+		nNeighbors++;
+	}
+	if (GameOfLifeGetCellState(aGameState,GetPos(nRow,nHeight),GetPos(nColumn+1,nWidth)))
+	{
+		nNeighbors++;
+	}
+	if (GameOfLifeGetCellState(aGameState,GetPos(nRow+1,nHeight),GetPos(nColumn-1,nWidth)))
+	{
+		nNeighbors++;
+	}
+	if (GameOfLifeGetCellState(aGameState,GetPos(nRow+1,nHeight),GetPos(nColumn,nWidth)))
+	{
+		nNeighbors++;
+	}
+	if (GameOfLifeGetCellState(aGameState,GetPos(nRow+1,nHeight),GetPos(nColumn+1,nWidth)))
+	{
+		nNeighbors++;
+	}
+	return nNeighbors;
+}
+				
+function GameOfLifeGetNewState(bState,nNeighbors)
+{
+	var bNewState = false;
+	if (bState == false)
+	{
+		if (nNeighbors == 3)
+		{
+			bNewState = true;
+		}
+	}
+	if (bState == true)
+	{
+		bNewState = true;
+		if (nNeighbors < 2)
+		{
+			bNewState = false;
+		}
+		else if (nNeighbors > 3)
+		{
+			bNewState = false;
+		}
+	}
+	return bNewState;
+}
+        
+function GameOfLifePlay(nHeight,nWidth,aGameState)
+{
+	var aNewGameState = [];
+	for (var nRow = 0; nRow < nHeight; nRow++)
+	{
+		aNewRow = [];
+		for (var nColumn = 0; nColumn < nWidth; nColumn++)
+		{
+			nNeighbors = GameOfLifeCountNeighbors(nHeight,nWidth,aGameState,nRow,nColumn);
+			var bState = GameOfLifeGetCellState(aGameState,nRow,nColumn);
+
+			aNewRow.push(GameOfLifeGetNewState(bState,nNeighbors));
+		}
+		aNewGameState.push(aNewRow);
+	}
+	return aNewGameState;
+}
+
+function GameOfLifeAddPattern(nHeight,nWidth,aGameState,aPattern,nPosY,nPosX)
+{
+	var aNewGameState = aGameState;
+	if (IsArray(aPattern))
+	{
+		for (var nPatternRow = 0; nPatternRow < aPattern.length; nPatternRow++)
+		{
+			var aPatternRow = aPattern[nPatternRow];
+			if (IsArray(aPatternRow))
+			{
+				for (var nPatternCol = 0; nPatternCol < aPatternRow.length; nPatternCol++)
+				{
+					var nSetPosY = (nPosY+nPatternRow) % nHeight;
+					var nSetPosX = (nPosX+nPatternCol) % nWidth;
+
+					aNewGameState = SetValue(
+						aPatternRow[nPatternCol] || GetValue(aNewGameState,nSetPosY,nSetPosY),
+						aNewGameState,
+						nSetPosY,
+						nSetPosX);
+						
+				}
+			}
+		}
+	}
+	
+	//console.log(aNewGameState);
+	return aNewGameState;
+}
+]]></script>
+        <script_name>GameOfLife</script_name>
+        <sys_class_name>sys_ui_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-28 22:30:04</sys_created_on>
+        <sys_id>4b353d4e1bb295105b76777d8b4bcbf7</sys_id>
+        <sys_name>x_snc_game_of_life.GameOfLife</sys_name>
+        <sys_package display_value="GameOfLife WORK IN PROGRESS" source="x_snc_game_of_life">4f2830ce1bfe55105b76777d8b4bcb35</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="GameOfLife WORK IN PROGRESS">4f2830ce1bfe55105b76777d8b4bcb35</sys_scope>
+        <sys_update_name>sys_ui_script_4b353d4e1bb295105b76777d8b4bcbf7</sys_update_name>
+        <ui_type>0</ui_type>
+        <use_scoped_format>false</use_scoped_format>
+    </sys_ui_script>
+</record_update>

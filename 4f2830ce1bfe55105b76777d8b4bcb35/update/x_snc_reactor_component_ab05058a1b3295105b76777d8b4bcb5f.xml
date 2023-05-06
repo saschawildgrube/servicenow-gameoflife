@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="x_snc_reactor_component">
+    <x_snc_reactor_component action="INSERT_OR_UPDATE">
+        <content_css/>
+        <dependencies>50263d8e1bb295105b76777d8b4bcbef</dependencies>
+        <description>The component that renders the Game Of Life Board - i.e. the current game state.</description>
+        <jsx>false</jsx>
+        <name>GameOfLifeBoard</name>
+        <role>element</role>
+        <script><![CDATA[class GameOfLifeBoard extends ReactorComponent
+{
+	constructor(props)
+	{
+		super(props);
+	}
+	
+	render()
+	{
+		var nHeight = GetIntegerValue(this.props.height);
+		var nWidth = GetIntegerValue(this.props.width);
+		var nCellSize = GetIntegerValue(this.props.cellsize);
+		var aGameState = this.props.gamestate;
+		
+		
+		var strColorGrid = 'darkgrey';
+		var strColorLife = 'black';
+		var strColorDead = 'white';
+
+		var aSvgElements = [];
+		for (var nRow = 0; nRow < nHeight; nRow++)
+		{
+			for (var nColumn = 0; nColumn < nWidth; nColumn++)
+			{
+				var bState = GameOfLifeGetCellState(aGameState,nRow,nColumn);
+				var strColor = strColorDead;
+				if (bState == true)
+				{
+					strColor = strColorLife;
+				}
+				aSvgElements.push(e('rect',{ x: nCellSize*nColumn, y: nCellSize*nRow, width: nCellSize, height: nCellSize, style: {fill: strColor} }));
+			}	
+		}
+
+		function RenderSvgLine(nX1,nY1,nX2,nY2,strColor)
+		{
+			return e('line',{ x1: nX1, y1: nY1, x2: nX2, y2: nY2, stroke: strColor });
+		}
+
+		aSvgElements.push(RenderSvgLine(0,0,(nWidth*nCellSize)-1,0,strColorGrid));
+		for (nRow = 0; nRow < nHeight; nRow++)
+		{
+			aSvgElements.push(RenderSvgLine(0,((nRow+1)*nCellSize)-1,(nWidth*nCellSize)-1,((nRow+1)*nCellSize)-1,strColorGrid));
+		}
+
+		aSvgElements.push(RenderSvgLine(0,0,0,(nHeight*nCellSize)-1,strColorGrid));
+		for (nColumn = 0; nColumn < nWidth; nColumn++)
+		{
+			aSvgElements.push(RenderSvgLine(((nColumn+1)*nCellSize)-1,0,((nColumn+1)*nCellSize)-1,(nHeight*nCellSize)-1,strColorGrid));
+		}
+		
+		var eSvg = e('svg',
+			{
+				width: (nWidth*nCellSize),
+				height: (nHeight*nCellSize),
+				style:
+					{
+						display: 'block',
+						margin: 'auto'
+					}
+			},
+			aSvgElements);
+			
+		return e('div',
+			{},
+			eSvg);	
+	}	
+}]]></script>
+        <source_type>ui_script</source_type>
+        <sys_class_name>x_snc_reactor_component</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-28 18:57:44</sys_created_on>
+        <sys_id>ab05058a1b3295105b76777d8b4bcb5f</sys_id>
+        <sys_name>GameOfLifeBoard</sys_name>
+        <sys_package display_value="GameOfLife WORK IN PROGRESS" source="x_snc_game_of_life">4f2830ce1bfe55105b76777d8b4bcb35</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="GameOfLife WORK IN PROGRESS">4f2830ce1bfe55105b76777d8b4bcb35</sys_scope>
+        <sys_update_name>x_snc_reactor_component_ab05058a1b3295105b76777d8b4bcb5f</sys_update_name>
+        <type>script</type>
+        <ui_script display_value="x_snc_game_of_life.GameOfLifeBoard">9b93090a1b3295105b76777d8b4bcb74</ui_script>
+        <url/>
+    </x_snc_reactor_component>
+</record_update>

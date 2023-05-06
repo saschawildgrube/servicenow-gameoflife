@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <active>true</active>
+        <api_name>x_snc_game_of_life.GetPattern</api_name>
+        <caller_access/>
+        <client_callable>false</client_callable>
+        <description>Returns a array of array containing the requested pattern, or false if the pattern could not be found.</description>
+        <name>GetPattern</name>
+        <script><![CDATA[function GetPattern(strPattern)
+{
+	var GetStringValue = x_snc_devtools.GetStringValue;
+	var ParseJson = x_snc_devtools.ParseJson;
+	var IsArray = x_snc_devtools.IsArray;
+	
+	strPattern = GetStringValue(strPattern); 
+	
+	if (strPattern == 'random')
+	{
+		var aPatterns = [];
+		var grPattern = new GlideRecord('x_snc_game_of_life_pattern');
+		grPattern.query();
+		while (grPattern.next())
+		{
+			aPatterns.push(GetStringValue(grPattern.id));
+		}
+
+		var nRandon = GlideSecureRandomUtil.getSecureRandomIntBound(aPatterns.length);
+		strPattern = aPatterns[nRandon];
+	}
+	
+	
+	var grPattern = new GlideRecord('x_snc_game_of_life_pattern');
+	grPattern.addQuery('id','=',strPattern);
+	grPattern.query();
+	if (grPattern.next())
+	{
+		var aPattern = ParseJson(GetStringValue(grPattern.getValue('json')));
+		if (IsArray(aPattern) == true)
+		{
+			return aPattern;
+		}
+	}
+
+	var grPattern = new GlideRecord('x_snc_game_of_life_pattern');
+	grPattern.addQuery('name','=',strPattern);
+	grPattern.query();
+	if (grPattern.next())
+	{
+		var aPattern = ParseJson(grPattern.json);
+		if (aPattern != false)
+		{
+			return aPattern;
+		}
+	}
+	
+	return false;
+}]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-11-05 13:58:09</sys_created_on>
+        <sys_id>da4d0dec97071910a6a07767f053afb2</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>GetPattern</sys_name>
+        <sys_package display_value="GameOfLife" source="x_snc_game_of_life">4f2830ce1bfe55105b76777d8b4bcb35</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="GameOfLife">4f2830ce1bfe55105b76777d8b4bcb35</sys_scope>
+        <sys_update_name>sys_script_include_da4d0dec97071910a6a07767f053afb2</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-05-06 18:41:00</sys_updated_on>
+    </sys_script_include>
+</record_update>

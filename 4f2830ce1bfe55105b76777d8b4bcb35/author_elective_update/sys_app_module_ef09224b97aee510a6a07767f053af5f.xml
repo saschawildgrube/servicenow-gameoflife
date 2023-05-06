@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_module">
+    <sys_app_module action="DELETE">
+        <active>true</active>
+        <application/>
+        <assessment/>
+        <device_type/>
+        <filter table="sys_atf_test_suite">sys_id=1309224b97aee510a6a07767f053af1c<item endquery="false" field="sys_id" goto="false" newquery="false" operator="=" or="false" value="1309224b97aee510a6a07767f053af1c"/>
+        </filter>
+        <hint/>
+        <homepage/>
+        <image/>
+        <link_type>DETAIL</link_type>
+        <map_page/>
+        <mobile_title>Test Suite</mobile_title>
+        <mobile_view_name>Mobile</mobile_view_name>
+        <name>sys_atf_test_suite</name>
+        <order>300</order>
+        <override_menu_roles>false</override_menu_roles>
+        <query>sysparm_view_forced=true</query>
+        <report/>
+        <roles/>
+        <sys_class_name>sys_app_module</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-05-06 14:42:44</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>ef09224b97aee510a6a07767f053af5f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Test Suite</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="GameOfLife WORK IN PROGRESS" source="x_snc_game_of_life">4f2830ce1bfe55105b76777d8b4bcb35</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="GameOfLife WORK IN PROGRESS">4f2830ce1bfe55105b76777d8b4bcb35</sys_scope>
+        <sys_update_name>sys_app_module_ef09224b97aee510a6a07767f053af5f</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-05-06 14:42:44</sys_updated_on>
+        <timeline_page/>
+        <title>Test Suite</title>
+        <uncancelable>false</uncancelable>
+        <view_name>DevTools</view_name>
+        <window_name/>
+    </sys_app_module>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="GameOfLife WORK IN PROGRESS">4f2830ce1bfe55105b76777d8b4bcb35</application>
+        <file_path/>
+        <instance_id>84975bb2db8d919c4d2bac44d4961989</instance_id>
+        <instance_name>wildgrubetokyo</instance_name>
+        <name>sys_app_module_ef09224b97aee510a6a07767f053af5f</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_module"><sys_app_module action="INSERT_OR_UPDATE"><active>true</active><application/><assessment/><device_type/><filter table="sys_atf_test_suite">sys_id=1309224b97aee510a6a07767f053af1c<item endquery="false" field="sys_id" goto="false" newquery="false" operator="=" or="false" value="1309224b97aee510a6a07767f053af1c"/></filter><hint/><homepage/><image/><link_type>DETAIL</link_type><map_page/><mobile_title>Test Suite</mobile_title><mobile_view_name>Mobile</mobile_view_name><name>sys_atf_test_suite</name><order>300</order><override_menu_roles>false</override_menu_roles><query>sysparm_view_forced=true</query><report/><roles/><sys_class_name>sys_app_module</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2023-05-06 14:42:44</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>ef09224b97aee510a6a07767f053af5f</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Test Suite</sys_name><sys_overrides/><sys_package display_value="GameOfLife WORK IN PROGRESS" source="x_snc_game_of_life">4f2830ce1bfe55105b76777d8b4bcb35</sys_package><sys_policy/><sys_scope display_value="GameOfLife WORK IN PROGRESS">4f2830ce1bfe55105b76777d8b4bcb35</sys_scope><sys_update_name>sys_app_module_ef09224b97aee510a6a07767f053af5f</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2023-05-06 14:42:44</sys_updated_on><timeline_page/><title>Test Suite</title><uncancelable>false</uncancelable><view_name>DevTools</view_name><window_name/></sys_app_module></record_update>]]></payload>
+        <payload_hash>1206732261</payload_hash>
+        <record_name>Test Suite</record_name>
+        <reverted_from/>
+        <source>f03b4d6c97071910a6a07767f053af43</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-05-06 15:02:28</sys_created_on>
+        <sys_id>289d6a8397eee510a6a07767f053af2f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>187f195f0710000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-05-06 15:02:28</sys_updated_on>
+        <type>Module</type>
+        <update_guid>649d6a83bbeee510b7a1caea3127e52f</update_guid>
+        <update_guid_history>649d6a83bbeee510b7a1caea3127e52f:0,eb09224b32aee5108cc745fbc62ff761:-48604562</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Test Suite">774f6ac797eee510a6a07767f053af85</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-05-06 15:10:03</sys_created_on>
+        <sys_db_object display_value="" name="sys_app_module">sys_app_module</sys_db_object>
+        <sys_id>1801d9868acd4820b6750fb56baf9be4</sys_id>
+        <sys_metadata>ef09224b97aee510a6a07767f053af5f</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Test Suite</sys_name>
+        <sys_package display_value="GameOfLife WORK IN PROGRESS" source="x_snc_game_of_life">4f2830ce1bfe55105b76777d8b4bcb35</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="GameOfLife WORK IN PROGRESS">4f2830ce1bfe55105b76777d8b4bcb35</sys_scope>
+        <sys_scope_delete display_value="">04bbfb4e59ac4b9288138af27e7a6824</sys_scope_delete>
+        <sys_update_name>sys_app_module_ef09224b97aee510a6a07767f053af5f</sys_update_name>
+        <sys_update_version display_value="sys_app_module_ef09224b97aee510a6a07767f053af5f">289d6a8397eee510a6a07767f053af2f</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-05-06 15:10:03</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

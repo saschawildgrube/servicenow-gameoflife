@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element attributes="update_synch=true" db_object_id="b15ec92097471910a6a07767f053af6c" extends="sys_metadata" label="Pattern" max_length="40" name="x_snc_game_of_life_pattern" type="collection">
+        <element label="ID" mandatory="true" max_length="20" name="id" type="string"/>
+        <element label="JSON" max_length="4000" name="json" type="script_plain"/>
+        <element display="true" label="Name" mandatory="true" max_length="40" name="name" type="string_full_utf8"/>
+        <element choice="3" label="Type" mandatory="true" max_length="40" name="type" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Still" sequence="1" value="still"/>
+                <element inactive_on_update="false" label="Oscillator" sequence="2" value="oscillator"/>
+                <element inactive_on_update="false" label="Spaceship" sequence="3" value="spaceship"/>
+                <element inactive_on_update="false" label="Methuselah" sequence="4" value="Methuselah"/>
+                <element inactive_on_update="false" label="Block-Laying Switch Engine" sequence="5" value="blocklayingswitchengine"/>
+                <element inactive_on_update="false" label="Gun" sequence="5" value="gun"/>
+            </choice>
+        </element>
+    </element>
+</database>

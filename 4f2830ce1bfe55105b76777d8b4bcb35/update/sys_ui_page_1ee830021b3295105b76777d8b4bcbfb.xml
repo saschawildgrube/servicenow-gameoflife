@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_page">
+    <sys_ui_page action="INSERT_OR_UPDATE">
+        <category>general</category>
+        <client_script/>
+        <description/>
+        <direct>false</direct>
+        <endpoint>x_snc_game_of_life_manual.do</endpoint>
+        <html><![CDATA[<?xml version="1.0" encoding="utf-8" ?>
+<j:jelly trim="false" xmlns:j="jelly:core" xmlns:g="glide" xmlns:j2="null" xmlns:g2="null">
+<div style="padding-left: 20px;">
+<span style="visibility: hidden;">_CUT_HERE_</span>
+	<g2:no_escape>$[
+		var docapi = new x_snc_devtools.DocumentationAPI('4f2830ce1bfe55105b76777d8b4bcb35');
+		docapi.RenderHeader();
+	]</g2:no_escape>
+	
+	<p>Welcome to The Game Of Life app - created and maintained by&#160;<a href="mailto:sascha.wildgrube@servicenow.com">Sascha Wildgrube</a>.</p>
+
+	<h2>Features</h2> 
+	<p>This app is an implementation of the well-known&#160;<a href="https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life" target="_blank">Conway's Game Of Life</a>&#160;- built using&#160;<a href="https://www.wildgrube.com/servicenow-reactor" target="_blank">Reactor</a>&#160;and&#160;<a href="http://www.wildgrube.com/servicenow-devtools" target="_blank">DevTools</a>. Enjoy!</p>
+
+	<h2>Disclaimer</h2>
+	<g2:no_escape>$[docapi.RenderDisclaimer()]</g2:no_escape>	
+	
+	<h2>System Requirements</h2>
+	<ul>
+		<g2:no_escape>$[
+			docapi.RenderSystemRequirements(
+				'Tokyo,Utah',
+				true,
+				AppGetDependencies());
+		]</g2:no_escape>	
+	</ul>
+	
+	<h2>Installation</h2>
+	<ol>
+		<g2:no_escape>$[
+			docapi.RenderInstallationInstructionsImportFromSourceControl(
+				'DevTools',
+				'https://github.com/saschawildgrube/servicenow-devtools',
+				true,
+				'https://www.wildgrube.com/servicenow-devtools');
+		]</g2:no_escape>
+		<g2:no_escape>$[
+			docapi.RenderInstallationInstructionsImportFromSourceControl(
+				'Reactor',
+				'https://github.com/saschawildgrube/servicenow-reactor',
+				true,
+				'https://www.wildgrube.com/servicenow-reactor');
+		]</g2:no_escape>
+		<g2:no_escape>$[
+			docapi.RenderInstallationInstructionsImportFromSourceControl(
+				'GameOfLife',
+				'https://github.com/saschawildgrube/servicenow-gameoflife');
+		]</g2:no_escape>		
+		<g2:no_escape>$[
+			docapi.RenderInstallationInstructionsAppInstall();
+		]</g2:no_escape>		
+		<!--<li>TODO: Add further steps required for installation...</li>-->
+	</ol>
+	
+	
+	
+	<h2>React(or) Components</h2>
+	<g2:no_escape>$[x_snc_reactor.HtmlRenderReactorComponents('x_snc_game_of_life')]</g2:no_escape>		
+	
+
+	<h2>Reference</h2>
+
+	<h3>Configuration Options</h3>
+	<g2:no_escape>$[docapi.RenderProperties()]</g2:no_escape>
+	
+	<h3>Roles</h3>
+	<g2:no_escape>$[docapi.RenderRoles()]</g2:no_escape>		
+
+	<h3>UI Actions</h3>
+	<g2:no_escape>$[docapi.RenderUIActions()]</g2:no_escape>		
+	
+	<h3>Script Includes</h3>
+	<g2:no_escape>$[docapi.RenderScriptIncludes()]</g2:no_escape>
+
+	<!--
+	<h3>UI Scripts</h3>
+	<g2:no_escape>$[docapi.RenderUIScripts()]</g2:no_escape>	
+	
+	<h3>Test step configurations</h3>
+	<g2:no_escape>$[docapi.RenderTestStepConfigurations()]</g2:no_escape>
+	
+	<h3>Extension Points</h3>
+	<g2:no_escape>$[docapi.RenderExtensionPoints()]</g2:no_escape>		
+
+	<h3>Business Rules</h3>
+	<g2:no_escape>$[docapi.RenderBusinessRules()]</g2:no_escape>	
+-->
+ 
+	<h2>License</h2>
+	<g2:no_escape>$[docapi.RenderCopyright(2023,'Sascha Wildgrube')]</g2:no_escape>
+	<g2:no_escape>$[docapi.RenderLicense()]</g2:no_escape>
+	
+
+
+	<h2>Release Notes</h2>
+<!--
+	<h3>1.1.0 - 2023-TODO</h3>
+	<ol>
+		<li>TODO: document changes here</li>
+	</ol>
+-->
+	
+	<h3>1.0.0 - 2023-05-06</h3>
+	<p>First baselined version</p>
+
+<span style="visibility: hidden;">_CUT_HERE_</span>
+</div>
+</j:jelly>]]></html>
+        <name>manual</name>
+        <processing_script/>
+        <sys_class_name>sys_ui_page</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-28 18:03:23</sys_created_on>
+        <sys_id>1ee830021b3295105b76777d8b4bcbfb</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>manual</sys_name>
+        <sys_package display_value="GameOfLife" source="x_snc_game_of_life">4f2830ce1bfe55105b76777d8b4bcb35</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="GameOfLife">4f2830ce1bfe55105b76777d8b4bcb35</sys_scope>
+        <sys_update_name>sys_ui_page_1ee830021b3295105b76777d8b4bcbfb</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-05-06 19:51:03</sys_updated_on>
+    </sys_ui_page>
+</record_update>

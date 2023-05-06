@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="x_snc_devtools_dependency">
+    <x_snc_devtools_dependency action="INSERT_OR_UPDATE">
+        <dependency display_value="Reactor WORK IN PROGRESS" source="x_snc_reactor">e5879c7fdb39d110dcbdd03cd3961946</dependency>
+        <documentation_url>https://www.wildgrube.com/servicenow-reactor</documentation_url>
+        <name>Reactor</name>
+        <repo_url>https://github.com/saschawildgrube/servicenow-reactor.git</repo_url>
+        <sys_class_name>x_snc_devtools_dependency</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-05-06 14:45:37</sys_created_on>
+        <sys_id>5fa962cb97aee510a6a07767f053af91</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Reactor</sys_name>
+        <sys_package display_value="GameOfLife WORK IN PROGRESS" source="x_snc_game_of_life">4f2830ce1bfe55105b76777d8b4bcb35</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="GameOfLife WORK IN PROGRESS">4f2830ce1bfe55105b76777d8b4bcb35</sys_scope>
+        <sys_update_name>x_snc_devtools_dependency_5fa962cb97aee510a6a07767f053af91</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-05-06 14:45:37</sys_updated_on>
+        <versions>1.4.0</versions>
+    </x_snc_devtools_dependency>
+</record_update>

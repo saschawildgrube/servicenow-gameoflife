@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_properties">
+    <sys_properties action="DELETE">
+        <choices/>
+        <description>Controls if the Game Of Life application produces log output.</description>
+        <ignore_cache>false</ignore_cache>
+        <is_private>false</is_private>
+        <name>x_snc_game_of_life.log.active</name>
+        <read_roles/>
+        <suffix>active</suffix>
+        <sys_class_name>sys_properties</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-28 18:03:17</sys_created_on>
+        <sys_id>c1e8fcce1bfe55105b76777d8b4bcb92</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_snc_game_of_life.log.active</sys_name>
+        <sys_package display_value="GameOfLife WORK IN PROGRESS" source="x_snc_game_of_life">4f2830ce1bfe55105b76777d8b4bcb35</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="GameOfLife WORK IN PROGRESS">4f2830ce1bfe55105b76777d8b4bcb35</sys_scope>
+        <sys_update_name>sys_properties_c1e8fcce1bfe55105b76777d8b4bcb92</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-10-28 18:03:17</sys_updated_on>
+        <type>boolean</type>
+        <value>true</value>
+        <write_roles/>
+    </sys_properties>
+    <sys_translated_text action="DELETE" query="documentkey=c1e8fcce1bfe55105b76777d8b4bcb92"/>
+<sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="GameOfLife WORK IN PROGRESS">4f2830ce1bfe55105b76777d8b4bcb35</application>
+        <file_path/>
+        <instance_id>84975bb2db8d919c4d2bac44d4961989</instance_id>
+        <instance_name>wildgrubetokyo</instance_name>
+        <name>sys_properties_c1e8fcce1bfe55105b76777d8b4bcb92</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_properties">
+    <sys_properties action="INSERT_OR_UPDATE">
+        <choices/>
+        <description>Controls if the Game Of Life application produces log output.</description>
+        <ignore_cache>false</ignore_cache>
+        <is_private>false</is_private>
+        <name>x_snc_game_of_life.log.active</name>
+        <read_roles/>
+        <suffix>active</suffix>
+        <sys_class_name>sys_properties</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-28 18:03:17</sys_created_on>
+        <sys_id>c1e8fcce1bfe55105b76777d8b4bcb92</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_snc_game_of_life.log.active</sys_name>
+        <sys_package display_value="GameOfLife WORK IN PROGRESS" source="x_snc_game_of_life">4f2830ce1bfe55105b76777d8b4bcb35</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="GameOfLife WORK IN PROGRESS">4f2830ce1bfe55105b76777d8b4bcb35</sys_scope>
+        <sys_update_name>sys_properties_c1e8fcce1bfe55105b76777d8b4bcb92</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-10-28 18:03:17</sys_updated_on>
+        <type>boolean</type>
+        <value>true</value>
+        <write_roles/>
+    </sys_properties>
+    <sys_translated_text action="delete_multiple" query="documentkey=c1e8fcce1bfe55105b76777d8b4bcb92"/>
+</record_update>]]></payload>
+        <payload_hash>1336196647</payload_hash>
+        <record_name>x_snc_game_of_life.log.active</record_name>
+        <reverted_from/>
+        <source>0341a8a497831910a6a07767f053af24</source>
+        <source_table>sys_upgrade_history</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-11-05 10:45:02</sys_created_on>
+        <sys_id>d741a8a497831910a6a07767f053af98</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1844764db5a0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-11-05 10:45:02</sys_updated_on>
+        <type>System Property</type>
+        <update_guid>1741a8a45a831910cfae88e80b6c3498</update_guid>
+        <update_guid_history>1741a8a45a831910cfae88e80b6c3498:0,43f0e0a4c08319101996869b5d304069:956119352,82ff14240083191054dc0ec01b975b36:1336196647</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-05-06 14:21:31</sys_created_on>
+        <sys_db_object display_value="" name="sys_properties">sys_properties</sys_db_object>
+        <sys_id>7cb25b81a37a4e20a0c19c91b8385759</sys_id>
+        <sys_metadata>c1e8fcce1bfe55105b76777d8b4bcb92</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_snc_game_of_life.log.active</sys_name>
+        <sys_package display_value="GameOfLife WORK IN PROGRESS" source="x_snc_game_of_life">4f2830ce1bfe55105b76777d8b4bcb35</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="GameOfLife WORK IN PROGRESS">4f2830ce1bfe55105b76777d8b4bcb35</sys_scope>
+        <sys_scope_delete display_value="">04bbfb4e59ac4b9288138af27e7a6824</sys_scope_delete>
+        <sys_update_name>sys_properties_c1e8fcce1bfe55105b76777d8b4bcb92</sys_update_name>
+        <sys_update_version display_value="sys_properties_c1e8fcce1bfe55105b76777d8b4bcb92">d741a8a497831910a6a07767f053af98</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-05-06 14:21:31</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
