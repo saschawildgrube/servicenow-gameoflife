@@ -14,6 +14,5 @@
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2023-05-06 14:21:17</sys_updated_on>
         <sys_user_role display_value="x_snc_game_of_life.player" name="x_snc_game_of_life.player">7bca6052dbbad5106a03dad1f396194b</sys_user_role>
-        <transaction_id/>
     </sys_security_acl_role>
 </record_update>

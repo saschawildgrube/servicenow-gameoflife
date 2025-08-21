@@ -6,7 +6,9 @@
         <caller_access/>
         <client_callable>true</client_callable>
         <description>Interface to client callable functions for the Game Of Life application.</description>
+        <mobile_callable>false</mobile_callable>
         <name>GameOfLifeClientAPI</name>
+        <sandbox_callable>true</sandbox_callable>
         <script><![CDATA[var GameOfLifeClientAPI = Class.create();
 GameOfLifeClientAPI.prototype = Object.extendsObject(global.AbstractAjaxProcessor,
 {
@@ -29,10 +31,14 @@ GameOfLifeClientAPI.prototype = Object.extendsObject(global.AbstractAjaxProcesso
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2022-11-05 13:53:08</sys_created_on>
         <sys_id>862c8dac97071910a6a07767f053af23</sys_id>
+        <sys_mod_count>1</sys_mod_count>
         <sys_name>GameOfLifeClientAPI</sys_name>
         <sys_package display_value="GameOfLife WORK IN PROGRESS" source="x_snc_game_of_life">4f2830ce1bfe55105b76777d8b4bcb35</sys_package>
-        <sys_policy>read</sys_policy>
+        <sys_policy/>
         <sys_scope display_value="GameOfLife WORK IN PROGRESS">4f2830ce1bfe55105b76777d8b4bcb35</sys_scope>
         <sys_update_name>sys_script_include_862c8dac97071910a6a07767f053af23</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-05-21 07:50:29</sys_updated_on>
+        <x_snc_devtools_sys_ui_script/>
     </sys_script_include>
 </record_update>

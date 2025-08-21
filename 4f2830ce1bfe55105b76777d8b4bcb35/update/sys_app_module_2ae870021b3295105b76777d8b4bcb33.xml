@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_module">
     <sys_app_module action="INSERT_OR_UPDATE">
         <active>true</active>
-        <application display_value="Game Of Life">a2e870021b3295105b76777d8b4bcb26</application>
+        <application display_value="GameOfLife">a2e870021b3295105b76777d8b4bcb26</application>
         <assessment/>
         <device_type/>
         <filter table="sys_atf_test_suite">sys_id=eae870021b3295105b76777d8b4bcb0c<item endquery="false" field="sys_id" goto="false" newquery="false" operator="=" or="false" value="eae870021b3295105b76777d8b4bcb0c"/>
@@ -18,6 +18,7 @@
         <override_menu_roles>false</override_menu_roles>
         <query>sysparm_view_forced=true</query>
         <report/>
+        <require_confirmation>false</require_confirmation>
         <roles/>
         <sys_class_name>sys_app_module</sys_class_name>
         <sys_created_by>admin</sys_created_by>
@@ -25,12 +26,15 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>2ae870021b3295105b76777d8b4bcb33</sys_id>
+        <sys_mod_count>0</sys_mod_count>
         <sys_name>Test Suite</sys_name>
         <sys_overrides/>
         <sys_package display_value="GameOfLife WORK IN PROGRESS" source="x_snc_game_of_life">4f2830ce1bfe55105b76777d8b4bcb35</sys_package>
         <sys_policy/>
         <sys_scope display_value="GameOfLife WORK IN PROGRESS">4f2830ce1bfe55105b76777d8b4bcb35</sys_scope>
         <sys_update_name>sys_app_module_2ae870021b3295105b76777d8b4bcb33</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-12-07 22:07:32</sys_updated_on>
         <timeline_page/>
         <title>Test Suite</title>
         <uncancelable>false</uncancelable>
